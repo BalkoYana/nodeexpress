@@ -27,16 +27,7 @@ app.use((err, req, res, next) => {
     next(err);
 });
 
-// Multer error handler middleware
-app.use((err, req, res, next) => {
-    if (err instanceof multer.MulterError) {
-        if (err.code === 'LIMIT_FILE_SIZE') {
-            throw createError.BadRequest('File size limit exceeded. Please upload a smaller file.');
-        }
-    }
 
-    next(err);
-});
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
