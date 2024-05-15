@@ -1,0 +1,19 @@
+{
+  "name": "mkrjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^3.1.7",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "multer": "^1.4.5-lts.1",
+    "mongodb": "^6.4.0",
+    "mongoose": "^8.2.1"
+  }
+}
